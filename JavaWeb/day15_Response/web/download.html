@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载文件</title>
+</head>
+<body>
+    <!--1. 创建HTML页面，页面中写两个下载超链接，href指向servlet，传递想要下载的数据名称
+        2. 创建DownLoadServlet类，将需要的文件加载进内存
+        3. 想要每次下载数据都弹出下载提示框，需要使用到相应头
+        4. 使用字节输出流对象将数据输出到用户端-->
+
+    <!--1. 创建HTML页面，页面中写两个下载超链接，href指向servlet，传递想要下载的数据名称-->
+    <a href="/day15/downLoadServlet?filename=1.jpg">激情图片-亚洲</a>
+    <a href="/day15/downLoadServlet?filename=黄色图片.jpg">激情图片-欧美</a>
+    <a href="/day15/downLoadServlet?filename=1.avi">亚洲无码</a>
+</body>
+</html>
